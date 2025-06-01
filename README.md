@@ -107,3 +107,10 @@ for i in {1..6}; do
 done
 echo "TAVILY_API_KEY=\"$TAVILY_API_KEY\"" >> module-4/studio/.env
 ```
+
+
+* đổi 
+OPENAI_API_KEY --> GOOGLE_API_KEY
+gpt4o_chat --> llm
+ChatOpenAI --> ChatGoogleGenerativeAI(model="gemini-2.0-flash")
+from langchain_openai import ChatOpenAI --> from langchain_google_genai import ChatGoogleGenerativeAI
